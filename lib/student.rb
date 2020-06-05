@@ -1,3 +1,4 @@
+require 'pry'
 class Student
   attr_accessor :id, :name, :grade
 
@@ -71,6 +72,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql)
+
   end
 
   def self.students_below_12th_grade
